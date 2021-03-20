@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ContactListItem from '../contact-list-item/ContactListItem';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import popTransition from './transitions/pop.module.css';
 // import slideTransition from './transitions/slide.module.css';
@@ -38,18 +38,20 @@ ContactList.propTypes = {
   // onRemove: PropTypes.func.isRequired,
 };
 
-const getFilteredContacts = state => {
-  const { filter, items } = state.contacts;
-  // const { contacts } = this.state;
-  return items.filter(item =>
-    item.name.toLowerCase().includes(filter.toLowerCase()),
-  );
-};
+// const getFilteredContacts = state => {
+//   const { filter, items } = state.contacts;
+//   // const { contacts } = this.state;
+//   return items.filter(item =>
+//     item.name.toLowerCase().includes(filter.toLowerCase()),
+//   );
+// };
 
-const mapStateToProps = state => ({
-  contacts: getFilteredContacts(state),
-});
+// const mapStateToProps = state => ({
+//   contacts: getFilteredContacts(state),
+// });
 
-const mapDispatchToProps = {};
+// const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(ContactList);
+// export default connect(mapStateToProps, mapDispatchToProps)(ContactList);
+
+export default ContactList;

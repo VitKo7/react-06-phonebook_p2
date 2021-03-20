@@ -65,16 +65,17 @@ class ContactForm extends Component {
           <label className={styles.label}>Number:</label>
           <input
             name="number"
-            type="tel"
+            type="text"
+            // type="tel"
             placeholder="123-456"
-            pattern="[0-9]{3}-[0-9]{3}"
+            // pattern="[0-9]{3}-[0-9]{3}"
             className={styles.input}
             onChange={this.handleInput}
             value={number}
           />
-          <span className={styles.text}>
+          {/* <span className={styles.text}>
             <i>Use this format only:</i> xxx-xxx
-          </span>
+          </span> */}
           <button type="submit" className={styles.btnAdd}>
             Add contact
           </button>
