@@ -1,3 +1,3 @@
-# goit-react-hw-06-phonebook_p2
+# react-06-phonebook_p2
 
-Module 5. Redux &amp; Redux Toolkit
+## 5. Redux &amp; Redux Toolkit
